@@ -1,13 +1,14 @@
 import turtle
+
 class ScorePen(turtle.Turtle):
-    """Classe para gerenciar a exibição e atualização da pontuação do jogo Pong.
+    """Class to manage the display and updating of the Pong game score.
 
     Attributes:
-        game: Uma instância da classe PongGame.
+        game (PongGame): An instance of the PongGame class.
     """
 
     def __init__(self):
-        """Inicializa a caneta de pontuação."""
+        """Initialize the score pen."""
         super().__init__()
         self.speed(0)
         self.color("white")
@@ -17,10 +18,10 @@ class ScorePen(turtle.Turtle):
         self.write("Player A: 0  Player B: 0", align="center", font=("Courier", 24, "normal"))
 
     def update_score(self, player):
-        """Atualiza a pontuação do jogador e exibe-a na tela.
+        """Updates the player's score and displays it on the screen.
 
         Args:
-            player (str): O jogador que marcou ponto (Player A ou Player B).
+            player (str): The player who scored (Player A or Player B).
         """
         if player == "Player A":
             self.game.score_a += 1
