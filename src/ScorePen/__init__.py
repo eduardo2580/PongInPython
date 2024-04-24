@@ -1,16 +1,17 @@
 """
-Definições ScorePen
+Definitions ScorePen
 
-Esta classe é responsável por exibir e atualizar a pontuação do jogo.
+This class is responsible for displaying and updating the game score.
 
-Responsabilidades:
+Responsibilities:
 
-- Exibe a pontuação na tela.
-- Atualiza a pontuação quando um jogador pontua.
+- Displays the score on the screen.
+- Updates the score when a player scores.
 
-Métodos:
+Methods:
 
-- update_score(): Atualiza a pontuação exibida na tela.
+- update_score(): Updates the score displayed on the screen.
+
 """
 
 __version__ = '1.0.0'
