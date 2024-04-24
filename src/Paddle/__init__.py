@@ -1,14 +1,16 @@
 """
-Esta classe representa os retângulos que os jogadores controlam para rebater a bola.
+Paddle Definitions
 
-Responsabilidades:
+This class represents the rectangles that the players control to hit the ball.
 
-- Define a aparência e o comportamento dos Paddles.
+Responsibilities:
 
-Métodos:
+- Defines the appearance and behavior of the Paddles.
 
-- paddle_up(): Move o Paddle para cima.
-- paddle_down(): Move o Paddle para baixo.
+Methods:
+
+- paddle_up(): Moves the Paddle up.
+- paddle_down(): Moves the Paddle down.
 """
 
 __version__ = '1.0.0'

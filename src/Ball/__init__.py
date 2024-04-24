@@ -1,13 +1,14 @@
 """
-Definições de Ball
+Ball Definitions
 
-Esta classe representa a bola que se move pelo campo do jogo.
+This class represents the ball that moves through the game field.
 
-Responsabilidades:
+Responsibilities:
 
-- Define a aparência e o comportamento da bola.
+- Defines the appearance and behavior of the ball.
 
 """
 
 __version__ = '1.0.0'
+
 

@@ -1,27 +1,27 @@
 import turtle
 
 class Paddle(turtle.Turtle):
-    """Uma classe que representa uma raquete em um jogo.
+    """A class that represents a paddle in a game.
 
-    Esta classe herda da classe turtle.Turtle e representa um objeto de raquete
-    usado em um jogo, como Pong.
+    This class inherits from the turtle.Turtle class and represents a paddle
+    object used in a game, such as Pong.
 
-    Atributos:
-    - x (int): A coordenada x da posição inicial da raquete.
-    - y (int): A coordenada y da posição inicial da raquete.
+    Attributes:
+    - x (int): The x-coordinate of the paddle's initial position.
+    - y (int): The y-coordinate of the paddle's initial position.
 
-    Métodos:
-    - __init__(self, x, y): Inicializa um objeto de raquete com as coordenadas x e y fornecidas.
-    - paddle_up(self): Move a raquete para cima por 20 unidades ao longo do eixo y.
-    - paddle_down(self): Move a raquete para baixo por 20 unidades ao longo do eixo y.
+    Methods:
+    - __init__(self, x, y): Initializes a paddle object with the provided x and y coordinates.
+    - paddle_up(self): Moves the paddle up by 20 units along the y-axis.
+    - paddle_down(self): Moves the paddle down by 20 units along the y-axis.
     """
 
     def __init__(self, x, y):
-        """Inicializa o objeto Paddle.
+        """Initializes the Paddle object.
 
         Args:
-        - x (int): A coordenada x da posição inicial da raquete.
-        - y (int): A coordenada y da posição inicial da raquete.
+        - x (int): The x-coordinate of the paddle's initial position.
+        - y (int): The y-coordinate of the paddle's initial position.
         """
         super().__init__()
         self.speed(0)
@@ -32,13 +32,13 @@ class Paddle(turtle.Turtle):
         self.goto(x, y)
 
     def paddle_up(self):
-        """Move a raquete para cima por 20 unidades ao longo do eixo y."""
+        """Moves the paddle up by 20 units along the y-axis."""
         y = self.ycor()
         y += 20
         self.sety(y)
 
     def paddle_down(self):
-        """Move a raquete para baixo por 20 unidades ao longo do eixo y."""
+        """Moves the paddle down by 20 units along the y-axis."""
         y = self.ycor()
         y -= 20
         self.sety(y)

@@ -1,22 +1,20 @@
-from Ball.definicoes_ball import Ball
-from Paddle.definicoes_paddle import Paddle
-from ScorePen.definicoes_ScorePen import ScorePen
+from Ball.ball_definitions import Ball
+from Paddle.paddle_definitions import Paddle
+from ScorePen.score_pen_definitions import ScorePen
 import turtle
 
 class PongGame:
-    """Classe para gerenciar o jogo Pong."""
+    """Class to manage the Pong game."""
 
     def __init__(self):
-
         """
-        Inicializa o jogo Pong.
+        Initializes the Pong game.
 
-        Inicializa a tela do jogo, configura as dimensões e título da janela,
-        define as cores de fundo e a taxa de atualização da tela. Também inicializa
-        os valores dos pontos, cria os objetos dos elementos do jogo (pádelas,
-        bola e caneta para pontuação) e configura os controles do teclado.
+        Initializes the game screen, configures the window dimensions and title,
+        sets background colors, and the screen update rate. Also initializes
+        the score values, creates the objects of game elements (paddles,
+        ball, and score pen), and configures keyboard controls.
         """
-        ...
         self.wn = turtle.Screen()
         self.wn.title("Pong")
         self.wn.bgcolor("black")
@@ -34,16 +32,13 @@ class PongGame:
         self.listen_keyboard()
 
     def listen_keyboard(self):
-
         """
-        Configura os controles do teclado.
+        Configures keyboard controls.
 
-        Habilita a escuta de eventos de teclado na janela do jogo e associa
-        as teclas 'w' e 's' para mover a pádela A para cima e para baixo,
-        respectivamente, e as teclas de seta para cima e para baixo para
-        mover a pádela B.
+        Enables keyboard event listening in the game window and associates
+        the 'w' and 's' keys to move paddle A up and down, respectively,
+        and the up and down arrow keys to move paddle B.
         """
-
         self.wn.listen()
         self.wn.onkeypress(self.paddle_a.paddle_up, "w")
         self.wn.onkeypress(self.paddle_a.paddle_down, "s")
@@ -51,15 +46,13 @@ class PongGame:
         self.wn.onkeypress(self.paddle_b.paddle_down, "Down")
 
     def run(self):
-
         """
-        Executa o loop principal do jogo.
+        Runs the main game loop.
 
-        Atualiza continuamente a tela do jogo, move a bola e verifica as colisões
-        com as pádelas. Este método constitui o loop principal do jogo, que é executado
-        continuamente até que o jogo seja encerrado.
+        Continuously updates the game screen, moves the ball, and checks collisions
+        with the paddles. This method constitutes the main game loop, which runs
+        continuously until the game is terminated.
         """
-
         while True:
             self.wn.update()
             self.ball.move()
