@@ -72,6 +72,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - **Community:** Thanks to the open-source community for support and contributions.
 
 Enjoy playing Ultimate Pong and have fun coding!
-```
-
-This README now provides a comprehensive overview, clear instructions, and useful sections to guide users and contributors alike.
