@@ -25,7 +25,7 @@
 ### 🚀 Quick Start
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/PongInPython.git
+git clone https://github.com/eduardo2580/PongInPython.git
 cd PongInPython
 
 # Install dependencies (if any)
@@ -79,7 +79,7 @@ python src/main.py
 ### 🚀 Início Rápido
 ```bash
 # Clonar o repositório
-git clone https://github.com/seu-usuario/PongInPython.git
+git clone https://github.com/eduardo2580/PongInPython.git
 cd PongInPython
 
 # Instalar dependências (se houver)
@@ -133,7 +133,7 @@ python src/main.py
 ### 🚀 Inicio Rápido
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tu-usuario/PongInPython.git
+git clone https://github.com/eduardo2580/PongInPython.git
 cd PongInPython
 
 # Instalar dependencias (si las hay)
